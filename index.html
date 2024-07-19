@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rak Buku</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>BookShelf App Dicoding</h2>
+        </div>
+        <div class="addBookForm">
+            <h3>Tambah Buku Baru</h3>
+            <form id="addBook">
+                <label for="title">Judul</label>
+                <input type="text" name="title" class="field" id="title" required>
+                <label for="author">Penulis</label>
+                <input type="text" name="author" class="field" id="author" required>
+                <label for="year">Tahun</label>
+                <input type="number" name="year" class="field" id="year" required>
+                <input type="checkbox" name="status" class="checkboxInput" id="check"><label class="checkLabel" for="check">Tandai sudah dibaca</label>
+                <button type="submit" class="submitData">Tambah buku ke rak</button>
+            </form>
+        </div>
+        <div class="library">
+            <div class="shelf first">
+                <div class="title finish">
+                    <h2>Sudah dibaca</h2>
+                </div>
+                <ul id="read-list"></ul>
+            </div>
+            <div class="shelf second">
+                <div class="title unfinish">
+                    <h2>Belum selesai dibaca</h2>
+                </div>
+                <ul id="unread-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
